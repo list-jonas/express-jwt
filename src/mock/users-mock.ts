@@ -1,6 +1,6 @@
 import { User } from "../types/user";
 
-export const fakeUsers: User[] = [
+export const usersMock: User[] = [
     {
         id: 1,
         username: 'max_mustermann',

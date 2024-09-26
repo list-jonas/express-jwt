@@ -1,5 +1,5 @@
 
-import { fakeCredentials } from "../mock/credentials-mock";
+import { credentialsMock } from "../mock/credentials-mock";
 import * as jwt from 'jsonwebtoken'
 import { JwtPayload } from "../types/jwt-payload";
 import { Credentials } from "../types/credentials";
@@ -9,7 +9,7 @@ class AuthService {
 
 
     public static login(userCredentials: Credentials): boolean {
-        const account = fakeCredentials.find(cred => cred.username === userCredentials.username);
+        const account = credentialsMock.find(cred => cred.username === userCredentials.username);
     
         if (account) {
             return account.password === userCredentials.password;

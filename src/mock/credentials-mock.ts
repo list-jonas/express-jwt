@@ -2,7 +2,7 @@ import { Credentials } from "../types/credentials";
 
 
 
-const fakeCredentials: Credentials[] = [
+const credentialsMock: Credentials[] = [
     {
         username: 'max_mustermann',
         password: '123456789'
@@ -13,4 +13,4 @@ const fakeCredentials: Credentials[] = [
     }
 ]
 
-export { fakeCredentials };
+export { credentialsMock };
