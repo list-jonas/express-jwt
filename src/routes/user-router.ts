@@ -1,6 +1,6 @@
 import express, { Router, Request, Response } from "express";
-import { fakeUsers } from "../data/users-mock";
-import { authenticateToken } from "../middleware/authenticate-token.middleware";
+import { fakeUsers } from "../mock/users-mock";
+import { authenticateToken } from "../middleware/authenticate-token";
 
 const userRouter: Router = express.Router();
 

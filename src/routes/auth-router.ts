@@ -1,7 +1,7 @@
 import express, { Router, Request, Response } from "express";
-import { isTokenRequest } from "../models/token-request";
-import { JwtPayload } from "../models/jwt-payload";
-import { isCredentialsObject } from "../models/credentials";
+import { isTokenRequest } from "../types/token-request";
+import { JwtPayload } from "../types/jwt-payload";
+import { isCredentialsObject } from "../types/credentials";
 import { AuthService } from "../services/auth-service";
 
 const authRouter: Router = express.Router();

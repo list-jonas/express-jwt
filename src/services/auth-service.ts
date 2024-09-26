@@ -1,8 +1,8 @@
 
-import { fakeCredentials } from "../data/credentials-mock";
+import { fakeCredentials } from "../mock/credentials-mock";
 import * as jwt from 'jsonwebtoken'
-import { JwtPayload } from "../models/jwt-payload";
-import { Credentials } from "../models/credentials";
+import { JwtPayload } from "../types/jwt-payload";
+import { Credentials } from "../types/credentials";
 
 class AuthService {
     private static REFRESH_TOKENS: string[] = [];
